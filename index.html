@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey</title>
-    <!-- daisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Manrope font family link -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- twiland custom class -->
-<script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey</title>
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Manrope font family link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- twiland custom class -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -24,99 +25,153 @@
       }
     }
   </script>
-<style>
- .Manrope_font {
-    font-family: 'Manrope', sans-serif;
-}
-.text_c{
-    #FF4240
-}
-</style>
+  <style>
+    .Manrope_font {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .text_c {
+      #FF4240
+    }
+  </style>
 </head>
+
 <body class="Manrope_font">
-    <header class=" max-w-7xl mx-auto ">
-        <!-- navbar -->
-       <section>
-         <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box font-semibold w-52 text-2xl">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>                     
-                            <li><a>Contact</a></li>
-                          </ul>
-                    </div>
-                    
-                  </div>
-                  <a class="btn btn-ghost text-4xl font-bold">Hockey<span class="text-[#FF4240]">’</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-2 font-semibold text-1.5xl">
-                    <li><a class="text-[#FF4240]">Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Pages</a></li>
-                      <li><a>Blog</a></li>                     
-                      <li><a>Contact</a></li>
-                  </ul>
-                  <div></div>
-                </div>
-                <div class="navbar-end space-x-1">
-                    <button class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                      </button>
-                   
-                    <a class="btn text-white bg-primary_bg">Get Ticket</a>
-                </div>
+  <header class=" max-w-7xl mx-auto mb-16 lg:mb-24 ">
+    <!-- navbar -->
+    <section>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
               </div>
-         </nav>
-       </section>
-       <section class="py-6">
-        <div>
-        <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
+              <div>
+                <ul tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box font-semibold w-52 text-2xl">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
               </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+
+            </div>
+            <a class="btn btn-ghost text-4xl font-bold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-2 font-semibold text-1.5xl">
+              <li><a class="text-[#FF4240]">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+            <div></div>
+          </div>
+          <div class="navbar-end space-x-1">
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+
+            <a class="btn text-white bg-primary_bg">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+      <!-- banner part -->
+    </section>
+    <section class="py-y">
+      <!-- slide1 -->
+      <div>
+        <div class="carousel w-full  ">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
         </div>
-       </section>
-    </header>
-    <main>
+      </div>
+    </section>
+  </header>
 
-    </main>
-    <footer>
+  <main class="max-w-7xl mx-auto ">
+    <!-- Professional Hockeys Club -->
+    <section class="py-6 ">
 
-    </footer>
+      <h3 class="text-center text-4xl font-bold py-5">Professional Hockeys Club</h3>
+      <p class="font-light text-center">Welcome to SKY Hockey club, where the spirit of hockey thrives in its purest
+        form! As a premier professional hockey club, </p>
+<div class="py-20">
+        <div class="flex text-center flex-col lg:flex-row gap-1 py-15">
+          <div>
+              <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"><span
+                      class="text-black-clr font-extrabold">87%</span></div>
+              <p class="font-semibold text-lg my-3">Prayer Facility</p>
+              <p class="text-[#0D0D1266]">sky boasts a roster of elite athletes, carefully selected for their skill, dedication, and love for the game. Our players are the heartbeat of the team.</p>
+          </div>
+          <div>
+              <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span
+                      class="text-black-clr font-extrabold">95%</span></div>
+              <p class="font-semibold text-lg my-3">Experienced Coach</p>
+              <p class="text-[#0D0D1266]">Behind the success of SKY stands a distinguished coaching staff...</p>
+          </div>
+          <div>
+              <div class="radial-progress text-[#FFB456]" style="--value:90;" role="progressbar"><span
+                      class="text-black-clr font-extrabold">90%</span></div>
+              <p class="font-semibold text-lg my-3">Senior Player</p>
+              <p class="text-[#0D0D1266]">Showcasing the prowess of our seasoned senior player—a beacon of skill
+                  and leadership on the field.</p>
+          </div>
+
+          <div>
+              <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span
+                      class="text-black-clr font-extrabold">80%</span></div>
+              <p class="font-semibold text-lg my-3">Training Ground</p>
+              <p class="text-[#0D0D1266]">The heartbeat of SKY's success lies in our cutting-edge training facilities. Our state-of-the-art training ground is equipped.</p>
+          </div>
+
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
